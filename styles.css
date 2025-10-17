@@ -1,11 +1,15 @@
 /* Minimal, clean styles (no external frameworks) */
+/* Colors updated to a professional, bright palette */
 :root {
-  --bg: #ffffff;
-  --panel: #121417;
-  --text: #e6e8eb;
-  --muted: #aeb4bc;
-  --accent: #7c5cff;
-  --ring: rgba(124, 92, 255, 0.3);
+  --bg: #f7fbff;                /* very light, clean background */
+  --panel: #ffffff;             /* white panels for clarity */
+  --text: #0b1b2b;              /* dark navy text for contrast */
+  --muted: #556b7a;             /* muted slate for secondary text */
+  --accent: #0b64d6;            /* bright professional blue accent */
+  --button-text: #ffffff;       /* text color for solid buttons */
+  --ring: rgba(11, 100, 214, 0.12); /* soft blue focus ring */
+  --panel-border: #e6eefb;      /* subtle border on panels */
+  --hover: rgba(11, 100, 214, 0.06); /* subtle hover highlight */
 }
 
 * { box-sizing: border-box; }
@@ -14,7 +18,7 @@ body {
   margin: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--text);
-  background: radial-gradient(1200px 600px at 80% -20%, #151a20 20%, transparent 60%) , var(--bg);
+  background: radial-gradient(800px 400px at 80% -20%, rgba(11,100,214,0.06) 20%, transparent 60%) , var(--bg);
   line-height: 1.6;
 }
 
@@ -37,7 +41,7 @@ body {
   padding: 8px 12px;
   border-radius: 999px;
 }
-.nav a:hover { background: #1a1f25; color: var(--text); }
+.nav a:hover { background: var(--hover); color: var(--text); }
 .brand { margin-right: auto; color: var(--text); font-weight: 700; letter-spacing: .3px; }
 
 .hero {
@@ -57,7 +61,7 @@ p { margin: 0 0 10px; color: var(--muted); }
   padding: 10px 16px;
   border-radius: 12px;
   text-decoration: none;
-  color: var(--text);
+  color: var(--button-text);
   background: var(--accent);
   box-shadow: 0 0 0 6px var(--ring);
   backdrop-filter: blur(10px);
@@ -65,18 +69,19 @@ p { margin: 0 0 10px; color: var(--muted); }
 .button.ghost {
   background: transparent;
   box-shadow: none;
+  color: var(--accent);
 }
 .button + .button { margin-left: 12px; }
 
 .accent { color: var(--accent); }
 
 .card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
-  border: 1px solid #242a33;
+  background: linear-gradient(180deg, rgba(11,100,214,0.03), rgba(11,100,214,0.00));
+  border: 1px solid var(--panel-border);
   border-radius: 18px;
   padding: 20px;
   margin: 16px 0;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.06);
 }
 
 .grid {
@@ -88,14 +93,14 @@ p { margin: 0 0 10px; color: var(--muted); }
 }
 .tile {
   background: var(--panel);
-  border: 1px solid #242a33;
+  border: 1px solid var(--panel-border);
   border-radius: 16px;
   padding: 16px;
 }
 .link { color: var(--text); text-underline-offset: 3px; }
 
 .footer {
-  opacity: .8;
+  opacity: .9;
   padding: 36px 0 64px;
   text-align: center;
   font-size: .95rem;
