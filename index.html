@@ -3,34 +3,65 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Fatemeh Khojasteh Dana</title>
-    <meta name="description" content="Personal website" />
+    <title>Fatemeh Khojasteh Dana — Embedded Security</title>
+    <meta name="description" content="Fatemeh Dana — Ph.D. candidate and embedded security engineer. Research, publications, and projects." />
+    <meta name="author" content="Fatemeh Khojasteh Dana" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="container">
-      <nav class="nav">
-        <a class="brand" href="#">MySite</a>
+    <header class="container" role="banner">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a class="brand" href="#">Fatemeh Dana</a>
         <a href="#about">About</a>
-        <a href="#projects">Publication</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
-      <section class="hero">
-        <h1>Hello, I’m <span class="accent">Fatemeh Dana</span>.</h1>
-        <p>Ph.D. student & Embedded Security Engineer. I build reliable, secure embedded systems.</p>
-        <div class="cta">
+
+      <section class="hero" aria-labelledby="hero-heading">
+        <h1 id="hero-heading">Hi, I’m <span class="accent">Fatemeh Khojasteh Dana</span></h1>
+        <p class="tagline">
+          Ph.D. candidate in Electrical & Computer Engineering · Embedded Security Engineer.
+          I design and evaluate reliable, secure embedded systems, focusing on fault injection, side‑channel analysis, and hardware resilience.
+        </p>
+        <div class="cta" role="group" aria-label="Primary actions">
           <a class="button" href="#projects">See my work</a>
-          <a class="button ghost" href="mailto:you@example.com">Get in touch</a>
+          <a class="button ghost" href="mailto:fdana@wpi.edu">Get in touch</a>
+          <a class="button outline" href="files/CV_Fatemeh_Dana.pdf" target="_blank" rel="noopener">Download CV</a>
         </div>
       </section>
     </header>
 
-    <main class="container">
+    <main class="container" role="main">
       <section id="about" class="card">
         <h2>About</h2>
         <p>
-          Short bio goes here. Mention your interests, current role, and what you’re looking for.
+          I am a Ph.D. candidate researching embedded systems security with practical experience building and evaluating hardware attack and defence tools.
+          My work blends experimental platforms (FPGA, SoC), Python tooling, and security analysis to improve system robustness in safety‑critical devices.
         </p>
+      </section>
+
+      <section id="research" class="card">
+        <h2>Research interests</h2>
+        <ul>
+          <li>Fault injection & glitching (voltage, clock)</li>
+          <li>Side‑channel analysis and countermeasures</li>
+          <li>Secure hardware/software co‑design for embedded systems</li>
+          <li>Instrumentation and measurement pipelines (FPGA, TRC parsing, visualization)</li>
+        </ul>
+      </section>
+
+      <section id="publications" class="card">
+        <h2>Selected publications</h2>
+        <p>
+          A curated list of papers, posters, and talks. For the full list and PDFs, visit the publications page or download the PDF bundle.
+        </p>
+        <ul class="simple-list">
+          <li><strong>Voltage Glitching Toolkit:</strong> A pipeline for fault injection on Artix‑7 (CW305). <a class="link" href="#" target="_blank" rel="noopener">Paper / Repo</a></li>
+          <li><strong>TDC Heatmap Analyzer:</strong> TRC parsing, statistics, and frequency‑swept visualizations. <a class="link" href="#" target="_blank" rel="noopener">Tool / PDF</a></li>
+          <li><strong>Conference paper:</strong> Title of a representative paper. <a class="link" href="#" target="_blank" rel="noopener">PDF</a></li>
+        </ul>
       </section>
 
       <section id="projects" class="card">
@@ -38,33 +69,42 @@
         <ul class="grid">
           <li class="tile">
             <h3>Voltage Glitching Toolkit</h3>
-            <p>Python + FPGA pipeline for fault injection experiments on Artix‑7 (CW305).</p>
-            <a class="link" href="#" target="_blank" rel="noopener">Repo</a>
+            <p>Python + FPGA pipeline for controlled fault injection experiments on Artix‑7-based testbeds.</p>
+            <a class="link" href="#" target="_blank" rel="noopener">Repository</a>
           </li>
           <li class="tile">
             <h3>TDC Heatmap Analyzer</h3>
-            <p>Parses TRC files, computes stats, and renders frequency‑swept heatmaps.</p>
-            <a class="link" href="#" target="_blank" rel="noopener">Repo</a>
+            <p>Parses TRC traces, computes statistics, and renders frequency‑swept heatmaps for fault characterization.</p>
+            <a class="link" href="#" target="_blank" rel="noopener">Repository</a>
           </li>
           <li class="tile">
-            <h3>Paper & Posters</h3>
-            <p>Selected publications, posters, and talks.</p>
-            <a class="link" href="#" target="_blank" rel="noopener">PDFs</a>
+            <h3>Data & Visualizations</h3>
+            <p>Reproducible scripts and notebooks for processing measurement data and generating publication figures.</p>
+            <a class="link" href="#" target="_blank" rel="noopener">Notebooks</a>
           </li>
         </ul>
       </section>
 
       <section id="contact" class="card">
         <h2>Contact</h2>
-        <p>Email: <a class="link" href="mailto:you@example.com">fdana@wpi.edu</a></p>
-        <p>LinkedIn: <a class="link" href="#" target="_blank" rel="noopener">linkedin.com/in/fateme-khojaste-dana</a></p>
+        <p>Email: <a class="link" href="mailto:fdana@wpi.edu">fdana@wpi.edu</a></p>
+        <p>LinkedIn: <a class="link" href="https://www.linkedin.com/in/fateme-khojaste-dana" target="_blank" rel="noopener">linkedin.com/in/fateme-khojaste-dana</a></p>
+        <p>GitHub: <a class="link" href="https://github.com/dana-fatemeh" target="_blank" rel="noopener">github.com/dana-fatemeh</a></p>
       </section>
     </main>
 
-    <footer class="container footer">
-      <p>&copy; <span id="year"></span> Your Name</p>
+    <footer class="container footer" role="contentinfo">
+      <p>&copy; <span id="year"></span> Fatemeh Khojasteh Dana — <a href="https://github.com/dana-fatemeh" target="_blank" rel="noopener">GitHub</a></p>
     </footer>
 
+    <script>
+      // Minimal script to ensure the footer year is current.
+      (function setYear() {
+        var y = new Date().getFullYear();
+        var el = document.getElementById('year');
+        if (el) el.textContent = y;
+      })();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
