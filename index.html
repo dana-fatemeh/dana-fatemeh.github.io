@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Site</title>
+    <meta name="description" content="Personal website" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav">
+        <a class="brand" href="#">MySite</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <section class="hero">
+        <h1>Hello, I’m <span class="accent">Your Name</span>.</h1>
+        <p>Ph.D. student & hardware security enthusiast. I build reliable, secure embedded systems.</p>
+        <div class="cta">
+          <a class="button" href="#projects">See my work</a>
+          <a class="button ghost" href="mailto:you@example.com">Get in touch</a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <section id="about" class="card">
+        <h2>About</h2>
+        <p>
+          Short bio goes here. Mention your interests, current role, and what you’re looking for.
+        </p>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <ul class="grid">
+          <li class="tile">
+            <h3>Voltage Glitching Toolkit</h3>
+            <p>Python + FPGA pipeline for fault injection experiments on Artix‑7 (CW305).</p>
+            <a class="link" href="#" target="_blank" rel="noopener">Repo</a>
+          </li>
+          <li class="tile">
+            <h3>TDC Heatmap Analyzer</h3>
+            <p>Parses TRC files, computes stats, and renders frequency‑swept heatmaps.</p>
+            <a class="link" href="#" target="_blank" rel="noopener">Repo</a>
+          </li>
+          <li class="tile">
+            <h3>Paper & Posters</h3>
+            <p>Selected publications, posters, and talks.</p>
+            <a class="link" href="#" target="_blank" rel="noopener">PDFs</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Email: <a class="link" href="mailto:you@example.com">you@example.com</a></p>
+        <p>LinkedIn: <a class="link" href="#" target="_blank" rel="noopener">linkedin.com/in/yourname</a></p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>&copy; <span id="year"></span> Your Name</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
