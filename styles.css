@@ -1,4 +1,4 @@
-/* Minimal, clean styles (no external frameworks) */
+/* /* Minimal, clean styles (no external frameworks) */
 /* Colors updated to a professional, bright palette */
 :root {
   --bg: #f7fbff;                /* very light, clean background */
@@ -10,8 +10,19 @@
   --ring: rgba(11, 100, 214, 0.12); /* soft blue focus ring */
   --panel-border: #e6eefb;      /* subtle border on panels */
   --hover: rgba(11, 100, 214, 0.06); /* subtle hover highlight */
-}
+} */
 
+:root {
+  --bg: #f9f8ff;                /* soft lavender background */
+  --panel: #ffffff;             /* crisp white cards */
+  --text: #2d2d3a;              /* dark navy-gray text for good contrast */
+  --muted: #6b6b85;             /* soft gray-violet secondary text */
+  --accent: #7b68ee;            /* lavender blue accent */
+  --button-text: #ffffff;       /* white button text */
+  --ring: rgba(123, 104, 238, 0.15); /* gentle violet focus ring */
+  --panel-border: #e9e6fa;      /* light pastel border */
+  --hover: rgba(123, 104, 238, 0.08); /* faint accent hover */
+}
 
 * { box-sizing: border-box; }
 html, body { height: 100%; }
