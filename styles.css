@@ -7,7 +7,7 @@
   --text: #2d2d3a;              /* dark navy-gray text for good contrast */
   --muted: #6b6b85;             /* soft gray-violet secondary text */
   --accent: #7b68ee;            /* lavender blue accent */
-  --button-text: #ffffff;       /* white button text */
+  --button-text: #ff00ff;       /* white button text */
   --ring: rgba(123, 104, 238, 0.15); /* gentle violet focus ring */
   --panel-border: #e9e6fa;      /* light pastel border */
   --hover: rgba(123, 104, 238, 0.08); /* faint accent hover */
