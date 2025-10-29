@@ -1,16 +1,5 @@
-/* /* Minimal, clean styles (no external frameworks) */
+/* Minimal, clean styles (no external frameworks) */
 /* Colors updated to a professional, bright palette */
-:root {
-  --bg: #f7fbff;                /* very light, clean background */
-  --panel: #ffffff;             /* white panels for clarity */
-  --text: #0b1b2b;              /* dark navy text for contrast */
-  --muted: #556b7a;             /* muted slate for secondary text */
-  --accent: #0b64d6;            /* bright professional blue accent */
-  --button-text: #ffffff;       /* text color for solid buttons */
-  --ring: rgba(11, 100, 214, 0.12); /* soft blue focus ring */
-  --panel-border: #e6eefb;      /* subtle border on panels */
-  --hover: rgba(11, 100, 214, 0.06); /* subtle hover highlight */
-} */
 
 :root {
   --bg: #f9f8ff;                /* soft lavender background */
