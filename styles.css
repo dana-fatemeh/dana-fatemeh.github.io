@@ -12,6 +12,7 @@
   --hover: rgba(11, 100, 214, 0.06); /* subtle hover highlight */
 }
 
+
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
@@ -21,7 +22,24 @@ body {
   background: radial-gradient(800px 400px at 80% -20%, rgba(11,100,214,0.06) 20%, transparent 60%) , var(--bg);
   line-height: 1.6;
 }
-
+.vertical-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.vertical-list .tile {
+  margin-bottom: 2em;
+}
+.date-range {
+  font-weight: normal;
+  font-size: 0.95em;
+  color: #666;
+  margin-left: 1em;
+}
+.highlights {
+  margin: 0.5em 0 0 1.5em;
+  list-style: disc;
+}
 .container {
   width: min(1100px, 92vw);
   margin: 0 auto;
