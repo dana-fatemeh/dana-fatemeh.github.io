@@ -12,7 +12,12 @@
   --panel-border: #e9e6fa;      /* light pastel border */
   --hover: rgba(123, 104, 238, 0.08); /* faint accent hover */
 }
-
+.button:hover {
+  background: #8a79f7;
+  box-shadow: 0 0 10px rgba(123, 104, 238, 0.25);
+  transform: translateY(-1px);
+  transition: all 0.2s ease;
+}
 * { box-sizing: border-box; }
 html, body { height: 100%; }
 body {
