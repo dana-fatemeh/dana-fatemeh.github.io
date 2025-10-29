@@ -2,8 +2,8 @@
 /* Colors updated to a professional, bright palette */
 
 :root {
-  --bg: #f9f8ff;                /* soft lavender background */
-  --panel: #ffffff;             /* crisp white cards */
+  --bg: #f9f8aa;                /* soft lavender background */
+  --panel: #00ffff;             /* crisp white cards */
   --text: #2d2d3a;              /* dark navy-gray text for good contrast */
   --muted: #6b6b85;             /* soft gray-violet secondary text */
   --accent: #7b68ee;            /* lavender blue accent */
