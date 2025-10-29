@@ -70,7 +70,7 @@ body {
 .brand { margin-right: auto; color: var(--text); font-weight: 700; letter-spacing: .3px; }
 
 .hero {
-  padding: 40px 0 24px;
+  padding: 20px 0 12px;
   padding-bottom: 0; /* remove extra gap below hero */
   margin-bottom: 0;
 }
