@@ -123,7 +123,7 @@ p { margin: 0 0 10px; color: var(--muted); }
   text-align: center;
   font-size: .95rem;
 }
-.profile-photo {
+/* .profile-photo {
   width: 160px;
   height: 160px;
   object-fit: cover;
@@ -131,4 +131,4 @@ p { margin: 0 0 10px; color: var(--muted); }
   display: block;
   margin: 0 auto 1em auto;
   box-shadow: 0 0 8px rgba(0,0,0,0.08);
-}
+} */
